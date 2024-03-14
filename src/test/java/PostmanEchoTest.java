@@ -9,7 +9,7 @@ public class PostmanEchoTest {
         var text = "Hello";
         given()
                 .baseUri("https://postman-echo.com")
-                .body("hi") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body(text) // отправляемые данные (заголовки и query можно выставлять аналогично)
 // Выполняемые действия
                 .when()
                 .post("/post")
